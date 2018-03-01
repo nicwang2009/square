@@ -1,0 +1,36 @@
+@nice-blue: #5B83AD;
+@light-blue: @nice-blue +#111;
+.bordered {
+	border-top: dotted 1px black;
+	border-bottom: solid 2px black;
+}
+
+#header {
+	color: @nice-blue;
+	.bordered;
+}
+
+
+/*多级属性之间的嵌套*/
+
+#head {
+	color: red;
+	.logo {
+		color: blue;
+	}
+	.logo1 {
+		color: green;
+	}
+}
+
+
+/*伪选择器*/
+
+a {
+  color: blue;
+  text-decoration: none;
+  &:hover {
+    color: red;
+    text-decoration: underline;
+  }
+}
